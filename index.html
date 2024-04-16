@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizzes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Escolha um Quiz:</h1>
+    <div class="quiz-options">
+      <button onclick="startQuiz('database')">Quiz de Banco de Dados</button>
+      <button onclick="startQuiz('oop')">Quiz de Programação Orientada a Objetos</button>
+      <button onclick="startQuiz('html_css_js')">Quiz de HTML, CSS e JavaScript</button>
+    </div>
+  </div>
+
+  <div id="quiz-container" class="hidden">
+    <h2 id="quiz-title"></h2>
+    <div id="question-container"></div>
+    <button id="next-btn" onclick="nextQuestion()">Próxima Questão</button>
+  </div>
+
+  <script src="node.js"></script>
+</body>
+</html>
